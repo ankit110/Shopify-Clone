@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e50a382ede.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      
+    tailwind.config = {
+      
+      theme: {
+        fontSize: {
+      sm: '0.9rem',
+      base: '1.04rem',
+      "xl": '1.15rem',
+      "1xl": '1.29rem',
+      "2xl": '1.563rem',
+      "3xl": '1.953rem',
+      "3.5xl": '2.221rem',
+      "4xl": '2.441rem',
+      "5xl": '3.052rem'
+    },
+          screens: {
+            sm: '480px',
+            sml: "650px",
+            md: '768px',
+            mdl:'850px',
+            lg: '1079px',
+
+            lgl: '1200px',
+            xl: '1230px',
+            '2xl': '1280px'
+          },
+        extend: {
+          colors: {
+            myWhite: "#FBF7ED",
+            myBlack: "#6B7177",
+            myGreen: "#004C3F",
+            myGreen1: "#008060",
+            mySky: "#F3FCF4",
+            mySky1: "#00AFE3",
+            myBlue: "#0F4A8A",
+            myBlue1: "#0D3E80"
+          }
+        }
+      }
+    }
+  </script>
+    <title>Shopify UI Clone</title>
+    <link rel="icon" type="image/png" href="https://cdn.shopify.com/static/shopify-favicon.png">
+</head>
+<body class="overflow-x-hidden">
+    <header class="flex bg-myWhite sticky top-0">
+        <nav class="flex w-full ml-5 mr-5 sm:ml-8 sm:mr-8 sml:ml-10 sml:mr-10 md:ml-20 md:mr-20">
+            
+            <!-- Left navigation bar -->
+
+            <div class="flex gap-8 w-1/2 justify-start">
+                <div class="flex">
+                    <a href="#">
+                        <img src="./asset/shopify-logo.png" class="h-24" alt="">
+                    </a>
+                </div>
+
+                <div class="hidden lg:flex">
+                    <ul class="flex items-center gap-8 justify-between">
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Start</a> <img src="./asset/dropmenu.svg" class="h-3" alt=""></li>
+                        
+
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Sell</a><img src="./asset/dropmenu.svg" class="h-3" alt=""></li>
+                        
+
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Market</a><img src="./asset/dropmenu.svg" class="h-3" alt=""></li>
+
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Manage</a><img src="./asset/dropmenu.svg" class="h-3" alt=""></li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Right Navigation Bar -->
+
+                    <!-- Mobile-responsive -->
+            <div class="flex items-center justify-end w-1/2 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+            </div>
+
+                    <!-- Web responsive -->
+
+            <div class="hidden lg:flex items-center gap-8 justify-end w-1/2">
+                <div class="flex">
+                    <ul class="flex items-center gap-8 justify-between">
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Pricing</a></li>
+                        
+
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Learn</a><img src="./asset/dropmenu.svg" class="h-3" alt=""></li>
+                        
+
+                        <li class="hover:cursor-pointer flex gap-1 text-myBlack items-center text-base font-bold"><a href="#">Log In</a></li>                        
+                    </ul>
+                </div>
+
+                <div class="flex">
+                    <button class="hover:bg-myGreen bg-myGreen1 text-white font-bold text-base rounded px-4 py-2 hover:shadow-xl">
+                        Try for free
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Catalog 1 -->
+
+    <section class="bg-myWhite">
+        <div class="flex w-full justify-center pb-10 flex-col-reverse lg:flex-row ">
+            <div class="flex flex-col ml-5 md:ml-20 gap-8 lg:w-1/2">
+                <div class="flex mt-20">
+                    <h1 class="text-3xl w-[100%]  sm:w-[65%] sm:4xl md:w-[70%] md:text-5xl text-myGreen font-bold lg:text-4xl 2xl:text-5xl">
+                        The easiest way to sell online in India
+                    </h1>
+                </div>
+
+                <div class="flex">
+                    <p class="text-1xl w-[90%] sm:w-[70%] font-normal text-myBlack sml:text-base md:text-xl  xl:text-1xl">
+                        Try one of the most powerful platforms on the market for free. No technical knowledge needed.
+                    </p>
+                </div>
+
+                <div class="flex w-full flex-col sml:flex-row gap-2">
+                    <input type="text" placeholder="Enter your Email Address" class="sm:placeholder:text-1xl placeholder-shown:border-gray-500 focus:border-myGreen focus:box-shadow-xl focus:border-2 flex grow[2] w-[80%] sml:w-[60%] p-3 rounded-md border ">
+                    <button class="flex grow[2] sml:grow[1] w-[80%] sml:w-[20%] p-3 hover:bg-myGreen bg-myGreen1 whitespace-nowrap rounded-md font-bold text-white text-base justify-center hover:box-shadow-xl ">Try for free</button>
+                </div>
+
+                <div class="flex">
+                    <p class="text-sm w-[80%] text-myBlack">
+                        Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex justify-center lg:w-1/2 lg:justify-end">
+                <img src="./asset/Bags.webp" sizes="100vw" class="image" alt="">
+            </div>
+        </div>
+    </section>
+
+
+                <!-- Go Online Business -->
+
+    <section class="bg-myGreen">
+
+        <div class="flex flex-col ml-5 mr-5 sml:ml-20 sml:mr-20 gap-16 pt-10 pb-10">
+
+                                <!-- Heading Section -->
+            <div class="flex-col gap-16">
+                <div class="flex">
+                    <h1 class="text-white text-2xl sm:text-3xl md:text-5xl">Bring you business online</h1>
+                </div>
+
+                <div class="flex flex-col 2xl:flex-row">
+                    <div class="flex text-white text-sm sm:text-base '2xl':w-[70%]">
+                        Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.
+                    </div>
+
+                    <div class="flex 2xl:w-[30%] 2xl:justify-end">
+                        <a href="#" class="text-white font-bold peer">Explore more examples </a>
+                        
+                        <svg class="w-4 h-4 ml-2 invert mt-[6px] peer-hover:translate-x-1 transition-all ease-in-out delay-75 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0
+                             45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5
+                              12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+
+                    <!-- Image Section -->
+
+            <div class="flex flex-col md:flex-row gap-8 md:gap-4  justify-between">
+                <div class="flex justify-between gap-4 md:gap-4">
+                    <div class="flex gap-2 flex-col">
+                        <img src="./asset/food.webp" alt="">
+                        <a href="#" class="font-bold text-white text-base whitespace-nowrap md:text-xl">FOOD & DRINK</a>
+                        <p class="font-bold text-white whitespace-nowrap text-base">Blue Tokai</p>
+                    </div>
+    
+                    <div class="flex gap-2 flex-col">
+                        <img src="./asset/jewelry.webp" alt="">
+                        <a href="#" class="font-bold text-white text-base md:text-xl">JEWELRY</a>
+                        <p class="font-bold text-white whitespace-nowrap text-base">Quirksmith</p>
+                    </div>
+                </div>
+                
+
+                <div class="flex justify-between gap-4 md:gap-4">
+                    <div class="flex gap-2 flex-col">
+                        <img src="./asset/electronics.webp" alt="">
+                        <a href="#" class="font-bold text-white text-base md:text-xl">ELECTRONICS</a>
+                        <p class="font-bold text-white whitespace-nowrap text-base">Crossbeats</p>
+                    </div>
+    
+                    <div class="flex gap-2 flex-col md:hidden mdl:flex">
+                        <img src="./asset/beauty.webp" alt="">
+                        <a href="#" class="font-bold text-white text-base md:text-xl">Beauty</a>
+                        <p class="font-bold text-white whitespace-nowrap text-base">Mcaffeine</p>
+                    </div>
+                </div>
+
+                
+
+                <div class="flex gap-2 flex-col hidden lg:flex">
+                    <img src="./asset/fashion.webp" alt="">
+                    <a href="#" class="font-bold text-white text-xl">FASHION</a>
+                    <p class="font-bold text-white text-base">Bunaai</p>
+                </div>
+            </div>
+        </div>
+        
+
+                    <!-- Online Services -->
+
+        <div class="flex flex-col gap-10 ml-5 mr-5 md:ml-20 md:mr-20 mt-16">
+            <div class="flex">
+                <h2 class="text-2xl text-white font-bold">Take the best path forward</h2>
+            </div>
+
+            <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 mb-10">
+                <div class="flex flex-col md:w-[40%] gap-6">
+                    <img src="./asset/start.png" class="w-[50px]" alt="">
+                    <p class="font-bold text-white">Start an online business</p>
+                    <p class="w-[80%] md:w-[100%] text-white ">Create a business, whether you've got a fresh idea or are looking for a new way to make money.</p>
+                </div>
+
+                <div class="flex flex-col md:w-[40%] gap-6">
+                    <img src="./asset/move.png" class="w-[50px]" alt="">
+                    <p class="font-bold text-white">Move your business online</p>
+                    <p class="w-[80%] md:w-[100%] text-white ">Turn your retail store into an online store and keep serving customer without missing a beat.</p>
+                </div>
+
+                <div class="flex flex-col md:w-[40%] gap-6">
+                    <img src="./asset/switch.png" class="w-[50px]" alt="">
+                    <p class="font-bold text-white">Switch to Shopify</p>
+                    <p class="w-[80%] md:w-[100%] text-white ">Bring your business to Shopify, no matter which ecommerce platform you're currently using.</p>
+                </div>
+
+                <div class="flex flex-col md:w-[40%] gap-6">
+                    <img src="./asset/hire.png" class="w-[50px]" alt="">
+                    <p class="font-bold text-white">Hire a Shopify expert</p>
+                    <p class="w-[80%] md:w-[100%] text-white ">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Explore more Section -->
+
+    <section class="bg-white mb-8">
+        <div class="flex flex-col gap-10 mt-10 ml-5 mr-5 md:ml-24 md:mr-24">
+                    <!-- Heading section -->
+
+            <div class="flex flex-col items-center">
+                <h2 class="font-normal text-1xl  sm:text-2xl sml:text-3xl">
+                    With you wherever you're going
+                </h2>
+
+                <p class="text-base  sm:text-xl text-center sml:w-[85%] lg:w-[60%] text-myBlack">
+                    One platform with all the ecommerce and point of sale features you need to start, run, and grow your business.
+                </p>
+            </div>
+
+                    <!-- Sell Everywhere -->
+
+            <div class="flex flex-col gap-6 justify-center md:items-center lg:flex-row">
+                <video class= "object-cover w-full lg:w-1/2" src="./asset/animation.webm" type="video/webm" autoplay muted loop></video>
+
+                <div class="flex flex-col lg:w-1/2 lg:justify-center lg:ml-10">
+                    <h2 class="font-normal text-1xl flex md:justify  sm:text-2xl sml:text-3xl">
+                        Sell everywhere
+                    </h2>
+    
+                    <p class="text-base  sm:text-xl sml:w-[85%] lg:w-[90%] text-myBlack">
+                        Use one platform to sell products to anyone, anywhere—in person with Point of Sale and online through your website, social media, and online marketplaces.
+                    </p>
+    
+                    <div class="flex 2xl:w-[40%]">
+                        <a href="#" class="text-myGreen1 font-bold peer">Explore more ways to sell </a>
+                        
+                        <svg class="w-4 h-4 ml-2 fill-myGreen1 mt-[6px] peer-hover:translate-x-1 transition-all ease-in-out delay-75 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0
+                             45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5
+                              12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+
+                        <!-- Market Your Business -->
+
+            <div class="flex flex-col gap-6 justify-center md:items-center lg:flex-row-reverse">
+                <img class= "object-cover w-full lg:w-1/2" src="./asset/catalog2.webp">
+
+                <div class="flex flex-col gap-4 lg:w-1/2 lg:justify-center lg:ml-10">
+                    <h2 class="font-normal text-1xl flex md:justify  sm:text-2xl sml:text-3xl">
+                        Market your business
+                    </h2>
+    
+                    <p class="text-base  sm:text-xl sml:w-[85%] lg:w-[90%] text-myBlack">
+                        Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital marketing campaigns.
+                    </p>
+    
+                    <div class="flex 2xl:w-[55%]">
+                        <a href="#" class="text-myGreen1 font-bold peer">Explore how to market your business </a>
+                        
+                        <svg class="w-4 h-4 ml-2 fill-myGreen1 mt-[6px] peer-hover:translate-x-1 transition-all ease-in-out delay-75 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0
+                             45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5
+                              12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- Manage Everything -->
+
+            <div class="flex flex-col gap-6 justify-center md:items-center lg:flex-row">
+                <img class= "object-cover w-full lg:w-1/2" src="./asset/stats.png">
+
+                <div class="flex flex-col gap-4 lg:w-1/2 lg:justify-center lg:ml-10">
+                    <h2 class="font-normal text-1xl flex md:justify  sm:text-2xl sml:text-3xl">
+                        Manage everything
+                    </h2>
+    
+                    <p class="text-base  sm:text-xl sml:w-[85%] lg:w-[90%] text-myBlack">
+                        Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere you go.
+                    </p>
+    
+                    <div class="flex 2xl:w-[55%]">
+                        <a href="#" class="text-myGreen1 font-bold peer">Explore how to manage your business </a>
+                        
+                        <svg class="w-4 h-4 ml-2 fill-myGreen1 mt-[6px] peer-hover:translate-x-1 transition-all ease-in-out delay-75 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0
+                             45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5
+                              12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+                <!-- Explore more on Shopify India -->
+    <section class="bg-mySky">
+        <div class="flex flex-col ml-5 mr-5 mb-10 md:ml-20 md:mr-20">
+            <div class="flex pt-10 pb-10">
+                <h2 class="font-normal text-myGreen1 text-1xl flex md:justify  sm:text-2xl sml:text-3xl">
+                    Explore more from Shopify in India
+                </h2>
+            </div>
+
+            <div class="flex flex-col-reverse pb-20 lg:flex-row">
+                <div class="flex flex-col gap-2 sm:gap-8 bg-white lg:w-1/2 p-8 sml:pr-16 lg:pr-28">
+                    <h2 class="font-bold text-base">START</h2>
+                    <p class="text-1xl sm:text-2xl ">
+                        Launch your store with the help of a Shopify Expert
+                    </p>
+
+                    <p class="text-sm sm:text-base text-myBlack sml:w-[85%]">Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme to building a fully customized site.</p>
+
+                    <div class="flex 2xl:w-[55%]">
+                        <a href="#" class="text-myGreen1 font-bold peer">Browse experts in India</a>
+                        
+                        <svg class="w-4 h-4 ml-2 fill-myGreen1 mt-[6px] peer-hover:translate-x-1 transition-all ease-in-out delay-75 cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0
+                             45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5
+                              12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="flex lg:w-1/2">
+                    <img src="./asset/person.webp" alt data-sizes="100vw" sizes="100vw" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
