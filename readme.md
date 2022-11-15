@@ -6,7 +6,7 @@
 
 # 📌 ** Project Link 👇** 
 
-**[Shopify_UI_Clone](https://lively-zabaione-2205ca.netlify.app/)**
+**[Shopify_UI_Clone](https://stalwart-blini-a9759c.netlify.app/)**
 
 # 📌 This Project is given in **"JavaScript Full stack Web Development Bootcamp"** by iNeuron.
 
